@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="100dp"
+        android:layout_height="190dp"
+        android:translationX="50dp"
+        android:translationY="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/size6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="sizeradiobuttonclicked"
+            android:text="Size 6" />
+
+        <RadioButton
+            android:id="@+id/size7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sizeradiobuttonclicked"
+            android:text="Size 7" />
+
+        <RadioButton
+            android:id="@+id/size8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sizeradiobuttonclicked"
+            android:text="Size 8" />
+
+        <RadioButton
+            android:id="@+id/size9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sizeradiobuttonclicked"
+            android:text="Size 9" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:text="Select size:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/gametyperadiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="200dp"
+        android:translationY="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/pvp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="gametyperadiobutton"
+            android:text="Player vs Player" />
+
+        <RadioButton
+            android:id="@+id/pvcom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gametyperadiobutton"
+            android:text="Player vs Computer" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="64dp"
+        android:text="Select gametype:"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/gametyperadiobutton">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Easy" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="118dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="240dp"
+        android:text="Computer moves:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ApplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="48dp"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
